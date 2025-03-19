@@ -2,3 +2,30 @@
 layout: home
 author_profile: true
 ---
+
+<div class="hero-section" style="
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  /*background-image: url('/assets/images/hero-bg.jpg');*/
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
+">
+  <div class="hero-content" style="
+    text-align: center;
+    color: white;
+    max-width: 1280px;
+    padding: 0 -2em;
+  ">
+    <h2 style="font-size: 2.5em; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">{{ site.title }}</h2>
+    <p style="font-size: 1.2em; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">{{ site.description }}</p>
+  </div>
+</div>

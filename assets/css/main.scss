@@ -7,3 +7,50 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/* Hide author sidebar elements */
+.sidebar {
+  display: none !important;
+}
+
+/* Make main content match header width */
+#main {
+  max-width: 100%;
+  width: 100%;
+  padding-left: 1em;
+  padding-right: 1em;
+
+  @include breakpoint($x-large) {
+    max-width: $max-width;
+    margin: 0 auto;
+  }
+}
+
+/* Fix layout for all content types */
+.archive,
+.page {
+  @include breakpoint($large) {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  @include breakpoint($x-large) {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+/* Direct fix for article/page content */
+article.page {
+  max-width: $max-width !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Force About page to respect width constraints */
+body.layout--single article.page {
+  width: 100% !important;
+  max-width: $max-width !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}

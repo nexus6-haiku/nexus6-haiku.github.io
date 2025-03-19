@@ -5,17 +5,17 @@
 /* Colors */
 $background-color: #252a34 !default;
 $text-color: #eaeaea !default;
-$primary-color: #00adb5 !default;
+$primary-color: #ffdd57 !default; /* Changed to Hikau yellow */
 $border-color: mix(#fff, $background-color, 20%) !default;
 $code-background-color: mix(#000, $background-color, 15%) !default;
 $code-background-color-dark: mix(#000, $background-color, 20%) !default;
 $form-background-color: mix(#000, $background-color, 15%) !default;
 $footer-background-color: mix(#000, $background-color, 30%) !default;
-$link-color: mix($primary-color, $text-color, 40%) !default;
-$link-color-hover: mix(#fff, $link-color, 25%) !default;
-$link-color-visited: mix(#000, $link-color, 25%) !default;
+$link-color: #ffdd57 !default; /* Changed to Hikau yellow */
+$link-color-hover: #ffcc00 !default; /* Slightly darker yellow for hover */
+$link-color-visited: mix(#000, $link-color, 15%) !default;
 $masthead-link-color: $text-color !default;
-$masthead-link-color-hover: mix(#000, $text-color, 20%) !default;
+$masthead-link-color-hover: $link-color !default; /* Changed to use Hikau yellow on hover */
 $navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
 
 .author__urls.social-icons i,
@@ -27,4 +27,84 @@ $navicon-link-color-hover: mix(#000, $background-color, 30%) !default;
 
 .ais-search-box .ais-search-box--input {
   background-color: $form-background-color;
+}
+
+/* Additional customizations for links */
+a {
+  color: $link-color;
+  &:hover {
+    color: $link-color-hover;
+  }
+  &:visited {
+    color: $link-color-visited;
+  }
+}
+
+.greedy-nav a {
+  &:hover {
+    color: $link-color;
+  }
+}
+
+.page__content {
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.sidebar a {
+  color: $link-color;
+
+  &:hover {
+    color: $link-color-hover;
+  }
+}
+
+.pagination--pager {
+  color: $text-color;
+  background-color: $primary-color;
+
+  &:hover {
+    color: $text-color;
+    background-color: $link-color-hover;
+  }
+}
+
+/* Custom pagination styling */
+.pagination {
+  li {
+    a {
+      color: $link-color;
+      background-color: $background-color;
+      border-color: mix(#fff, $background-color, 25%);
+
+      &:hover {
+        color: $text-color;
+        background-color: $link-color-hover;
+      }
+
+      &.disabled {
+        color: mix(#fff, $background-color, 40%);
+      }
+
+      &.current {
+        color: #000; /* Dark text for selected page */
+        background-color: $primary-color;
+        border-color: $primary-color;
+      }
+    }
+  }
+}
+
+.btn--primary {
+  background-color: $primary-color;
+  color: $text-color;
+
+  &:hover {
+    background-color: $link-color-hover;
+  }
 }

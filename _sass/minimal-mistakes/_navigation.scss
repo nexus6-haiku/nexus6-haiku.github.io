@@ -88,7 +88,7 @@
 
       &.current,
       &.current.disabled {
-        color: #fff;
+        color: #000;
         background: $primary-color;
       }
 
@@ -133,6 +133,8 @@
 
     &:hover {
       @include yiq-contrasted($muted-text-color);
+      color: #000;
+      background-color: $primary-color;
     }
 
     &:first-child {
