@@ -1,11 +1,12 @@
 ---
 title: "Setting up an AI/LLM Stack in Haiku: A Practical Guide"
-date: 2025-03-11T15:34:30-04:00
+date: 2025-03-19T18:30:00-00:00
 categories:
-  - New Adventures in AI
+  - New Adventures In AI
 tags:
   - AI
   - Haiku
+  - Python
 ---
 
 I wanted to push the boundaries of what Haiku can do, so I decided to experiment with setting up a complete AI stack on it. My goal was to see if Haiku could actually run modern Large Language Models without GPU acceleration by using the most used frameworks like LangChain. While mainstream operating systems often require powerful hardware for AI workloads, I was curious if Haiku might offer a practical alternative for enthusiasts who want to explore AI without investing in specialized equipment. In this article, I'll walk you through how I built a functional Python environment for AI in Haiku and demonstrate how to leverage essential components for working with LLMs, all running on modest hardware like my ThinkPad T480s.
