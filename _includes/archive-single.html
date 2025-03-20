@@ -24,6 +24,13 @@
         <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h2>
+	{% if post.date %}
+      <p class="page__meta">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: date_format }}</time>
+      </p>
+    {% endif %}
     {% include page__meta.html type=include.type %}
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
   </article>
