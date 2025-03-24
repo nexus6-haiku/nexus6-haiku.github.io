@@ -238,7 +238,7 @@ The process is relatively simple:
 
 An interesting feature of FAISS is that it also returns a distance score (in this case, the L2 distance), which indicates how relevant the document is to the query. The lower the score, the more semantically similar the document is to the query.
 
-On Haiku, this type of semantic search works well even with CPUs, especially for moderately sized document collections. For larger collections, it might be necessary to further optimize the FAISS configuration.
+On Haiku, this type of semantic search works well even with the CPU, especially for moderately sized document collections.
 
 ## Complete Implementation: Simple RAG System
 
@@ -446,7 +446,7 @@ This approach is particularly useful on Haiku because it allows us to leverage e
 
 I've shown how to configure and use an AI/LLM stack in Haiku, demonstrating that it's possible to run language models and semantic retrieval systems even on a lightweight operating system without GPU acceleration.
 
-The resource that's most scarce on Haiku for these types of applications is definitely RAM. LLM models, even quantized ones, require a significant amount of memory. For an acceptable experience, I recommend:
+LLM models, even quantized ones, require a significant amount of memory. For an acceptable experience, I recommend:
 
 1. **Using quantized models**: Models in GGUF format with 4-bit or 3-bit quantization can significantly reduce memory consumption.
 2. **Limiting the context**: Reducing the context size (`n_ctx`) is one of the most effective ways to reduce memory usage.
