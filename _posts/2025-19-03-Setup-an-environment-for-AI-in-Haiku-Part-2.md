@@ -12,7 +12,7 @@ tags:
 ## Using AI Components in Haiku
 
 In the [previous post]({% post_url 2025-19-03-Setup-an-environment-for-AI-in-Haiku-Part-1 %}) we have seen which tools and frameworks are available in Haiku and how to install them.
-Now let's see how to use these with some practical examples.
+Now let's see how to use these with some practical examples. You can find the code used in this post in [this repository](https://github.com/nexus6-haiku/ai-stack-haiku-examples){:target="_blank"}.
 
 ### Connecting to llama.cpp via OpenAI API and LangChain
 
