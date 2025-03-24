@@ -84,11 +84,12 @@ layout: default
   {% elsif page.id and page.related %}
     {% include page__related.html posts=site.posts %}
   {% endif %}
-</div>
 
-<div class="page__mycomments" id="comments">
+  <div class="page__mycomments" id="comments">
     {%if page.comments%}
       <hr>
       {% include mastodon_comments.html url=page.url %}
     {%endif%}
+</div>
+
 </div>
