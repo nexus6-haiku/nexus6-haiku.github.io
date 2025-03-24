@@ -7,6 +7,10 @@ tags:
   - AI
   - Haiku
   - Python
+comments:
+  id: 114216921183626942
+  #host: mastodon.social
+  #user: nexus_6
 ---
 
 ## Using AI Components in Haiku
