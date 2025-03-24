@@ -8,27 +8,15 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-/* Hide author sidebar elements */
-.sidebar {
+/* Hide author sidebar profile only, not the TOC sidebar */
+.author__avatar,
+.author__content,
+.author__urls-wrapper {
   display: none !important;
 }
 
-/* Make main content match header width */
-#main {
-  max-width: 100%;
-  width: 100%;
-  padding-left: 1em;
-  padding-right: 1em;
-
-  @include breakpoint($x-large) {
-    max-width: $max-width;
-    margin: 0 auto;
-  }
-}
-
-/* Fix layout for all content types */
 .archive,
-.page {
+.page__related {
   @include breakpoint($large) {
     width: 100%;
     padding-right: 0;
@@ -40,21 +28,18 @@ search: false
   }
 }
 
-/* Direct fix for article/page content */
+/* Make main content match header width */
 article.page {
-  max-width: $max-width !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
+    float: left;
+    width: 100%;
 }
 
-/* Force About page to respect width constraints */
-body.layout--single article.page {
-  width: 100% !important;
-  max-width: $max-width !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
+archive {
+    float: left;
+    width: 100%;
 }
 
+/* Hide pagination if needed */
 .pagination {
   display: none;
 }

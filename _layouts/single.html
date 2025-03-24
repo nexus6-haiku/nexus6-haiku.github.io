@@ -85,3 +85,10 @@ layout: default
     {% include page__related.html posts=site.posts %}
   {% endif %}
 </div>
+
+<div class="page__mycomments" id="comments">
+    {%if page.comments%}
+      <hr>
+      {% include mastodon_comments.html url=page.url %}
+    {%endif%}
+</div>

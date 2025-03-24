@@ -5,7 +5,12 @@ categories:
   - Blog
 tags:
   - Introduction
+comments:
+  id: 114214256915462773
+  #host: mastodon.social
+  #user: nexus_6
 ---
+
 
 Hello and welcome to my new blog! I'm excited to share my journey developing applications and tools for Haiku.
 
