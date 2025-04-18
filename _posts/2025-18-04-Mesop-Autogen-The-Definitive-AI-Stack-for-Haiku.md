@@ -7,6 +7,10 @@ tags:
   - AI
   - Haiku
   - Python
+comments:
+  id: 114361466652030637
+  #host: mastodon.social
+  #user: nexus_6
 ---
 
 It's an exciting time to be a Haiku user interested in AI. While the rest of the computing world seems to be rushing headlong into increasingly resource-hungry models and frameworks, those of us in the Haiku community have been taking a more measured approach. After all, when your operating system is designed with efficiency and responsiveness as core principles, you tend to look at the AI landscape a bit differently.
