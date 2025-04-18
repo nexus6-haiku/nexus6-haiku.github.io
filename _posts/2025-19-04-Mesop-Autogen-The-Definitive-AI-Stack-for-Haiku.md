@@ -1,6 +1,6 @@
 ---
 title: "Mesop + Autogen: The Definitive AI Stack for Haiku?"
-date: 2025-04-18T18:30:00-00:00
+date: 2025-04-19T00:30:00-00:00
 categories:
   - New Adventures In AI
 tags:
